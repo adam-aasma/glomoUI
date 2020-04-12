@@ -1,0 +1,41 @@
+.ul,.header {
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+.ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: var(--dark);
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 10px 5px 5px rgba(0,0,0,0.5);
+}
+
+.status {
+    color: white;
+}
+
+.li {
+    list-style: none;
+    z-index: 1000;
+    background-color: rgba(255,255,255,0.6);
+    margin: 1rem 0;
+    box-shadow: 10px 5px 5px rgba(0,0,0,0.5);
+}
+
+.link {
+    composes: link from '../../App.css';
+}
+
+@media only screen and (min-width: 600px) {
+    .ul,.header {
+        width: 50%;
+    }
+}

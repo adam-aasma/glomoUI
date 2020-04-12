@@ -1,0 +1,123 @@
+
+.betButtons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+.betButton {
+  width: 80px;
+  height: 40px;
+  background-color: var(--dark);
+  border-color: var(--dark);
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.betButtonInactive {
+  opacity: 0.5;
+}
+
+.centContainer {
+  composes: centContainer from '../../App.css';
+  background-color: rgba(255,255,255,0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 10px 5px 5px rgba(0,0,0,0.5);
+
+}
+.header {
+  display: flex;
+  padding: 0.4rem 0.6rem;
+  background-color: var(--dark);
+  color: white;
+  align-items: center;
+}
+
+.countryGroupWrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.sport {
+  font-weight: normal;
+  margin-left: auto;
+  font-size: var(--font-size-sub-header);
+  text-transform: lowercase;
+}
+
+.sport::first-letter{
+  text-transform: uppercase;
+}
+
+.country {
+  font-size: var(--font-size-header);
+  font-weight: bold;
+  
+}
+
+.group {
+  font-size: var(--font-size-sub-header);
+  font-weight: 400;
+ 
+}
+
+
+.game {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ margin: 1rem 0;
+}
+
+.teamHome {
+  width: 40%;
+  text-align: center;
+  margin-top: 20px;
+  
+}
+
+.teamAway {
+  width: 40%;
+  text-align: center;
+  margin-top: 20px;
+  
+}
+
+.VS {
+  display: block;
+  font-size: 3rem;
+  font-weight: 200;
+  opacity: 0.5;
+  font-weight: 400;
+}
+
+.historyList {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 500px;
+}
+
+.li {
+  list-style: none;
+  z-index: 1000;
+  background-color: rgba(255,255,255,0.6);
+  margin: 1rem 0;
+  
+
+}
+
+@media only screen and (min-width: 900px) {
+  .VS {
+    font-size: 5rem;
+  }
+}
+
+
+

@@ -1,0 +1,24 @@
+.footer {
+    display: flex;
+    padding: 0.3rem 0.2rem;
+    background-color: var(--dark);
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footerNext{
+    composes: button from '../../App.css';
+    color: white;
+  }
+
+  .footerNext:focus {
+      outline: none;
+  }
+  
+  .link {
+      composes: link from '../../App.css';
+      margin-left: 10px;
+      
+  }
+  

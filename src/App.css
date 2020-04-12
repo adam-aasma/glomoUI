@@ -1,0 +1,107 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  font-size: 14px;
+  font-family: 'Montserrat',helvetica,sans-serif;
+  color: black;
+  background-image: url('http://localhost:8080/arena.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+} 
+
+:root {
+  --color-complementary:  #3d9960;
+  --dark: rgb(2, 3, 2);
+  --font-size-header: 1.15rem;
+  --font-size-sub-header: 0.85rem;
+}
+h1,h2,h3,h4,h5,h6,p,div,ul,li {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.button {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+.button.submit {
+  color: #fff;
+  background-color: var(--color-complementary);
+  border-color: var(--color-complementary);
+  width: 100%;
+}
+.centContainer {
+  position: absolute;
+  top: 50%;
+  width: 90%;
+  left: 50%;
+  margin-left: -45%;
+  margin-top: -150px;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--color-complementary);
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  :root {
+    --font-size-header: 1.2rem;
+    --font-size-sub-header: 1rem;
+  }
+ 
+} 
+
+@media only screen and (min-width: 900px) {
+  .centContainer {
+    width: 50%;
+    margin-left: -25%;
+  }
+} 
+
+
+
+
+
+
+
